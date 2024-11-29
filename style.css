@@ -178,45 +178,40 @@ ul li a:hover{
     background-size: cover;
     background-image: url(logback.avif);
     height: 100vh;
+    display: flex; /* Use flexbox to center the form */
+    align-items: center; /* Center vertically */
+    justify-content: center;
     }
 
 .form{
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    margin-top: 180px;
-    transform: translate(0%,-5%);
+    width: 300px; /* Increased width for better layout */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
     border-radius: 10px;
     padding: 25px;
 }
 
 .form h2{
-    width: 220px;
+    width: 100%; /* Make it responsive */
     font-family: sans-serif;
     text-align: center;
     color: white;
     font-size: 22px;
     background-color: skyblue;
     border-radius: 10px;
-    margin: 2px;
+    margin: 2px 0 20px 0; /* Adjusted margin for spacing */
     padding: 8px;
 }
 
 .form input{
-    width: 240px;
+    width: 100%; /* Make input fields full width */
     height: 35px;
     background: transparent;
+    border: none; /* Remove all borders for a cleaner look */
     border-bottom: 1px solid skyblue;
-    border-top: none;
-    border-right: none;
-    border-left: none;
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 10px; /* Reduced margin for better spacing */
     font-family: sans-serif;
 }
 
@@ -230,11 +225,11 @@ ul li a:hover{
 }
 
 .btnn{
-    width: 240px;
+    width: 100%; /* Make button full width */
     height: 40px;
     background: skyblue;
     border: none;
-    margin-top: 30px;
+    margin-top: 20px; /* Adjusted margin */
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
@@ -266,6 +261,11 @@ ul li a:hover{
     padding-bottom: 10px;
     text-align: center;
     color: white;
+}
+.icons {
+    display: flex; /* Use flexbox for icons */
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 10px; /* Add margin for spacing */
 }
 .icons a{
     text-decoration: none;
